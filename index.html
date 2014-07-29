@@ -1,140 +1,176 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Cafefinder - find a coffice, cafe or coworking space near you." />
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/slate.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>CafeFinder by ttringas</title>
+    <title>Cafefinder - find a coffice, cafe or coworking space</title>
   </head>
 
   <body>
-    <div class="shell">
-      <div id="twitter" style="position:fixed;top:5px;right:5px;">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out CafeFinder it's rad!" data-via="tylertringas">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      </div>
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>CafeFinder</h1>
-            <h2>Find A Nearby Cafe, Do Work Wherever.</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="#" class="zip"></a><a href="#" class="tgz"></a>
-        </span>
-      </section>
-
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-cafefinder" class="anchor" href="#welcome-to-cafefinder"><span class="octicon octicon-link"></span></a>Welcome to CafeFinder</h3>
-
-<h4 style="padding-bottom:25px;">Find freelancer-friendly cafes and coffee shops nearby. Each cafe has free wifi, power outlets, good seating, and most importantly COFFEE.</h4>
-
-<div id='storemapper' style='width:100%;max-width:750px'><p>Store Locator is loading from <a href='https://www.storemapper.co'>Storemapper store locator software</a>...</p></div><script data-storemapper-id='1'>(function() {var script = document.createElement('script');script.type  = 'text/javascript';script.async = true;script.src = 'http://www.storemapper.co/js/widget.js'; var entry = document.getElementsByTagName('script')[0];entry.parentNode.insertBefore(script, entry);}());</script>
-
-<h3>
-<a name="powered-by-storemapper" class="anchor" href="#powered-by-storemapper"><span class="octicon octicon-link"></span></a>Powered By StoreMapper</h3>
-
-<p>This app is a little side project Powered by <a href="http://www.storemapper.co">StoreMapper Store Locator Software</a> my dead simple store locator app. With StoreMapper you can add a store locator, dealer locator, or like this project a list of any locations and your users &amp; customers can find the nearest location. You can easily embed StoreMapper on ANY website including Wordpress, Joomla, Drupal sites or e-commerce sites powered by <a href="http://www.shopify.com/?ref=tyler-tringas">Shopify</a>, BigCommerce, Magento, 3dCart, OpenCart and pretty much anything else you can think of.</p>
-
-<h3>
-<a name="why-cafefinder-exists" class="anchor" href="#why-cafefinder-exists"><span class="octicon octicon-link"></span></a>Why CafeFinder Exists</h3>
-
-<p>I recently spent over a year traveling the world while learning to code, doing freelance web development, and prototyping my solar energy startup <a href="http://www.solarlist.com">SolarList</a>. I had a lot of fun, but I was also quite serious about staying productive and getting work done. Every time I went to a new city I had a mad scramble to find a suitable cafe for doing work. A good cafe has the following:</p>
-
-<ul>
-<li>Fast (preferably free) Wifi</li>
-<li>Power Outlets</li>
-<li>Plenty of comfortable seating</li>
-<li>Food &amp; Restrooms</li>
-<li>And most importantly a freelancer-friendly vibe where you won't get glared at for hanging around for a few hours.</li>
-</ul><h3>
-<a name="contribute-your-own-suggestions" class="anchor" href="#contribute-your-own-suggestions"><span class="octicon octicon-link"></span></a>Contribute Your Own Suggestions</h3>
-
-<p>Fill out the form below and I'll do a quick double-check and add your suggestion to the map. Thanks!</p>
-<a href="#" id="show_suggestion">Suggest a Cafe</a>
-<div id="suggestion" style="display:none;">
-<div id="wufoo-z7p7k7">
-Fill out my <a href="http://tylertringas.wufoo.com/forms/z7p7k7">online form</a>.
-</div>
-<script type="text/javascript">var z7p7k7;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'tylertringas', 
-'formHash':'z7p7k7', 
-'autoResize':true,
-'height':'737',
-'async':true,
-'header':'show'};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { z7p7k7 = new WufooForm();z7p7k7.initialize(options);z7p7k7.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
-</div>
-<h3>
-<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>About The Author</h3>
-
-<p>I blog about <a href="http://www.tylertringas.com">my random thoughts</a> and <a href="http://www.solarlist.com/solar-blog">my startup</a>. I sometimes say interesting things on Twitter so...<br>
-<a href="https://twitter.com/tylertringas" class="twitter-follow-button" data-show-count="false">Follow @tylertringas</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/ttringas">ttringas</a> on GitHub</p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1 id="project_title">CafeFinder</h1>
+          <h2 id="project_tagline">Find a café or co-working space nearby</h2>
+        </header>
     </div>
 
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      $('#show_suggestion').click(function(e){
-        e.preventDefault();
-        $(this).hide();
-        $('#suggestion').show();
-      });
-    });
-  </script>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Find a café or co-working space nearby</h1>
+        <p>Slate is a simple theme that I created for the <a href="http://pages.github.com">GitHub Pages automatic generator</a>. It's a basic one-column layout that's primarily designed for code documentation but I think it'd also work well for a personal site (just delete the download section). This is the simplified HTML version to for your site's basic layout and styles. Clone these files and replace this content to get the ball rolling.</p>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-26006330-13");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+        <h1>Headline 1</h1>
+
+       <div id='storemapper' style='width:100%;max-width:750px'><p>Store Locator is loading from <a href='https://www.storemapper.co'>Storemapper plugin</a>...</p></div><script type='text/javascript' src='//maps.googleapis.com/maps/api/js?sensor=true&libraries=places'></script><script data-storemapper-start='2014,07,29' data-storemapper-id='1162'>(function() {var script = document.createElement('script');script.type  = 'text/javascript';script.async = true;script.src = document.location.protocol + '//www.storemapper.co/js/widget.js'; var entry = document.getElementsByTagName('script')[0];entry.parentNode.insertBefore(script, entry);}());</script>
+
+        <h2>Headline 2</h2>
+
+        <p>Lorem ipsizzle funky fresh i'm in the shizzle boom shackalack, consectetizzle adipiscing my shizz. Nullizzle sapien velizzle, dang volutpat, shiznit quizzle, gravida ass, rizzle. Pot get down get down tortor. Sed erizzle. Black go to hizzle dolizzle dapibizzle turpis fo shizzle my nizzle yo. Maurizzle pellentesque nibh et check it out. Bow wow wow check it out tortizzle. Pellentesque for sure rhoncizzle bow wow wow. In owned habitasse brizzle dictumst. Nizzle dapibizzle. Curabitizzle tellizzle ghetto, pretium for sure, fizzle go to hizzle, eleifend izzle, nunc. Dope suscipizzle. Integizzle boom shackalack velit ass purus.</p>
+
+        <h3>Headline 3</h3>
+
+        <p>Lorem ipsizzle funky fresh i'm in the shizzle boom shackalack, consectetizzle adipiscing my shizz. Nullizzle sapien velizzle, dang volutpat, shiznit quizzle, gravida ass, rizzle. Pot get down get down tortor. Sed erizzle. Black go to hizzle dolizzle dapibizzle turpis fo shizzle my nizzle yo. Maurizzle pellentesque nibh et check it out. Bow wow wow check it out tortizzle. Pellentesque for sure rhoncizzle bow wow wow. In owned habitasse brizzle dictumst. Nizzle dapibizzle. Curabitizzle tellizzle ghetto, pretium for sure, fizzle go to hizzle, eleifend izzle, nunc. Dope suscipizzle. Integizzle boom shackalack velit ass purus.</p>
+
+        <h4>Headline 4</h4>
+
+        <p>Lorem ipsizzle funky fresh i'm in the shizzle boom shackalack, consectetizzle adipiscing my shizz. Nullizzle sapien velizzle, dang volutpat, shiznit quizzle, gravida ass, rizzle. Pot get down get down tortor. Sed erizzle. Black go to hizzle dolizzle dapibizzle turpis fo shizzle my nizzle yo. Maurizzle pellentesque nibh et check it out. Bow wow wow check it out tortizzle. Pellentesque for sure rhoncizzle bow wow wow. In owned habitasse brizzle dictumst. Nizzle dapibizzle. Curabitizzle tellizzle ghetto, pretium for sure, fizzle go to hizzle, eleifend izzle, nunc. Dope suscipizzle. Integizzle boom shackalack velit ass purus.</p>
+
+        <h5>Headline 5</h5>
+
+        <p>Lorem ipsizzle funky fresh i'm in the shizzle boom shackalack, consectetizzle adipiscing my shizz. Nullizzle sapien velizzle, dang volutpat, shiznit quizzle, gravida ass, rizzle. Pot get down get down tortor. Sed erizzle. Black go to hizzle dolizzle dapibizzle turpis fo shizzle my nizzle yo. Maurizzle pellentesque nibh et check it out. Bow wow wow check it out tortizzle. Pellentesque for sure rhoncizzle bow wow wow. In owned habitasse brizzle dictumst. Nizzle dapibizzle. Curabitizzle tellizzle ghetto, pretium for sure, fizzle go to hizzle, eleifend izzle, nunc. Dope suscipizzle. Integizzle boom shackalack velit ass purus.</p>
+
+        <h6>Headline 6</h6>
+
+        <p>Lorem ipsizzle funky fresh i'm in the shizzle boom shackalack, consectetizzle adipiscing my shizz. Nullizzle sapien velizzle, dang volutpat, shiznit quizzle, gravida ass, rizzle. Pot get down get down tortor. Sed erizzle. Black go to hizzle dolizzle dapibizzle turpis fo shizzle my nizzle yo. Maurizzle pellentesque nibh et check it out. Bow wow wow check it out tortizzle. Pellentesque for sure rhoncizzle bow wow wow. In owned habitasse brizzle dictumst. Nizzle dapibizzle. Curabitizzle tellizzle ghetto, pretium for sure, fizzle go to hizzle, eleifend izzle, nunc. Dope suscipizzle. Integizzle boom shackalack velit ass purus.</p>
+
+        <p>Roses are <em>emphasized</em></br>
+        Violets are <strong>strong</strong></p>
+
+        <h3>We all like making lists</h3>
+
+        <ul>
+          <li>Red Apples</li>
+          <li>Purple Grapes</li>
+          <li>Green Kiwifruits</li>
+        </ul>
+
+        <p>Let's get crazy:</p>
+
+        <ol>
+          <li>
+            <p>This is a list item with two paragraphs. Lorem ipsum dolor
+            sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+            mi posuere lectus.</p>
+
+            <p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+            vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+            sit amet velit.</p>
+          </li>
+          <li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p></li>
+        </ol>
+
+        <p>What about some code <strong>in</strong> a list? That's insane, right?</p>
+
+        <ol>
+          <li>
+            <p>In Ruby you can map like this:</p>
+              <code>['a', 'b'].map { |x| x.uppercase }</code>
+          </li>
+          <li>
+            <p>In Rails, you can do a shortcut:</p>
+              <code>['a', 'b'].map(&amp;:uppercase)</code>
+          </li>
+        </ol>
+
+        <p>Some people seem to like definition lists</p>
+
+        <dl>
+        <dt>Lower cost</dt>
+          <dd>The new version of this product costs significantly less than the previous one!</dd>
+          <dt>Easier to use</dt>
+          <dd>We've changed the product so that it's much easier to use!</dd>
+        </dl>
+
+        <h3>I am a robot</h3>
+
+        <p>Maybe you want to print <code>robot</code> to the console 1000 times. Why not?</p>
+<pre>
+def robot_invasion
+puts("robot " * 1000)
+end
+</pre>
+
+<p>How about we throw some angle braces and ampersands in there?</p>
+
+<pre><code>
+&lt;div class="footer"&gt;
+&amp;copy; 2013 Zorg Industries
+&lt;/div&gt;
+</code></pre>
+
+        <h3>If you need to blame someone, the best way to do so is by quoting them:</h3>
+
+        <blockquote>
+        <p>I, at any rate, am convinced that He does not throw dice.</p>
+        </blockquote>
+
+        <p>Or perhaps someone a little less eloquent:</p>
+
+        <blockquote>
+        <p>I wish you'd have given me this written question ahead of time so I
+        could plan for it... I'm sure something will pop into my head here in
+        the midst of this press conference, with all the pressure of trying to
+        come up with answer, but it hadn't yet...</p>
+
+        <p>I don't want to sound like
+        I have made no mistakes. I'm confident I have. I just haven't - you
+        just put me under the spot here, and maybe I'm not as quick on my feet
+        as I should be in coming up with one.</p>
+        </blockquote>
+
+        <h2>An octocat appears!</h2>
+        <img alt="an octocat!" src="http://octodex.github.com/images/octocat-de-los-muertos.jpg" />
+        <p>My favorite octocat, illustrated by <a href="https://github.com/cameronmcefee">@cameronmceffee</a>.</p>
+
+        <h2>Table for two</h2>
+
+        <table>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Rank</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Tom Preston-Werner</td>
+          <td>Awesome</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Albert Einstein</td>
+          <td>Nearly as awesome</td>
+        </tr>
+        </table>
+        
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
 
   </body>
 </html>
