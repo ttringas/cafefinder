@@ -2,8 +2,21 @@
   margin-top: 10px;
 }
 
+#storemapper-form {
+  padding: 0 10px 0 0;
+}
+
 #storemapper-form label {
   line-height: 18px;
+}
+
+#storemapper-list {
+  margin:0;
+  padding: 0 10px 0 0;
+}
+
+#storemapper-list p {
+  word-wrap: break-word;
 }
 
 #twitter-widget-0 {
